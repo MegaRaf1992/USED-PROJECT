@@ -1,0 +1,158 @@
+// ===== POPUP NEWSLETTER =====
+// Mostra popup dopo 5 secondi
+setTimeout(() => {
+    const popup = document.getElementById('newsletterPopup');
+    if (popup) {
+        popup.classList.add('show');
+    }
+}, 5000);
+
+// Funzione per chiudere il popup
+function closeNewsletter() {
+    const popup = document.getElementById('newsletterPopup');
+    if (popup) {
+        popup.classList.remove('show');
+    }
+}
+
+// ===== GESTIONE FORM NEWSLETTER =====
+const newsletterForms = document.querySelectorAll('.newsletter-form');
+newsletterForms.forEach(form => {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = form.querySelector('input[type="email"]').value;
+        
+        // Qui andrà la logica per inviare l'email al backend
+        console.log('Email newsletter:', email);
+        
+        // Mostra messaggio di successo
+        alert('Grazie per esserti iscritto! Controlla la tua email per lo sconto del 10%.');
+        
+        // Chiudi popup se aperto
+        closeNewsletter();
+        
+        // Reset form
+        form.reset();
+    });
+});
+
+// ===== HERO SLIDER (preparato per implementazione futura) =====
+// Attualmente mostra un solo slide
+// Per aggiungere più slides, duplicare la struttura .hero-slide in HTML
+// e implementare la logica di navigazione qui sotto
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-slide');
+
+function nextSlide() {
+    if (slides.length > 1) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+}
+
+// Auto-avanzamento slide ogni 5 secondi (se ci sono più slides)
+if (slides.length > 1) {
+    setInterval(nextSlide, 5000);
+}
+
+// ===== BOTTONI PRODOTTI =====
+// Gestione click bottoni "Aggiungi al carrello"
+const addToCartButtons = document.querySelectorAll('.btn-add-cart');
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        const productCard = e.target.closest('.product-card');
+        const productTitle = productCard.querySelector('.product-title').textContent;
+        const productPrice = productCard.querySelector('.price-current').textContent;
+        
+        // Qui andrà la logica per aggiungere al carrello
+        console.log('Aggiunto al carrello:', productTitle, productPrice);
+        
+        // Feedback visivo
+        button.textContent = '✓ Aggiunto';
+        button.style.background = '#10b981';
+        
+        setTimeout(() => {
+            button.textContent = 'Aggiungi';
+            button.style.background = '';
+        }, 2000);
+    });
+});
+
+// Gestione click bottoni "Quick View"
+const quickViewButtons = document.querySelectorAll('.btn-quick-view');
+quickViewButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        const productCard = e.target.closest('.product-card');
+        const productTitle = productCard.querySelector('.product-title').textContent;
+        
+        // Qui andrà la logica per mostrare il modal di quick view
+        console.log('Quick view:', productTitle);
+        alert('Funzionalità Quick View in arrivo! Prodotto: ' + productTitle);
+    });
+});
+
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// ===== HEADER SCROLL EFFECT =====
+let lastScroll = 0;
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 100) {
+        header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+    } else {
+        header.style.boxShadow = 'none';
+    }
+    
+    lastScroll = currentScroll;
+});
+
+// ===== MOBILE MENU (preparato per implementazione futura) =====
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const nav = document.querySelector('.nav');
+
+if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', () => {
+        // Qui andrà la logica per aprire/chiudere il menu mobile
+        console.log('Mobile menu clicked');
+        // nav.classList.toggle('active');
+    });
+}
+
+// ===== LAZY LOADING IMMAGINI (quando aggiungerai foto reali) =====
+// Uncomment quando sostituirai le emoji con immagini reali
+/*
+if ('IntersectionObserver' in window) {
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.classList.add('loaded');
+                imageObserver.unobserve(img);
+            }
+        });
+    });
+    
+    const images = document.querySelectorAll('img[data-src]');
+    images.forEach(img => imageObserver.observe(img));
+}
+*/
+
+console.log('🚀 Elettronica Consapevole caricato con successo!');
