@@ -1,452 +1,358 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elettronica Consapevole - Elettronica Usata Garantita | Risparmia fino al 60%</title>
-    <meta name="description" content="Acquista elettronica usata testata e garantita. Elettrodomestici, PC, gaming e vintage con garanzia 30 giorni.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elettronica Consapevole – Risparmia senza rinunciare alla qualità</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="header">
-        <div class="header-container">
-            <a href="/" class="logo">
-                <div class="logo-icon">EC</div>
-                <span>Elettronica Consapevole</span>
-            </a>
-            <nav class="nav">
-                <a href="/catalogo/">Catalogo</a>
-                <a href="/riparazioni/">Riparazioni</a>
-                <a href="/come-funziona/">Come Funziona</a>
-                <a href="/blog/">Blog</a>
-                <a href="/chi-siamo/">Chi Siamo</a>
-            </nav>
-            <a href="/catalogo/" class="cta-btn">Scopri il Catalogo</a>
-            <button class="mobile-menu-btn" aria-label="Menu">
-                <div class="mobile-menu-icon"></div>
-            </button>
-        </div>
-    </header>
 
-    <!-- HERO SLIDER -->
-    <section class="hero">
-        <div class="hero-slide active">
-            <div class="hero-content">
-                <div class="hero-badge">FINO AL 60% DI RISPARMIO</div>
-                <h1>Risparmia Mantenendo Qualità e Affidabilità</h1>
-                <p>Elettronica usata testata, descritta onestamente e garantita 30 giorni. Zero sorprese.</p>
-                <div class="hero-cta">
-                    <a href="/catalogo/" class="btn-primary">Esplora il Catalogo</a>
-                    <a href="/come-funziona/" class="btn-secondary">Come Funziona</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CATEGORIE -->
-    <section class="categories">
-        <div class="container">
-            <div class="section-header">
-                <h2>Scopri le Nostre Categorie</h2>
-                <p>Cinque mondi di elettronica usata, testata e garantita</p>
-            </div>
-            <div class="categories-grid">
-                <a href="/catalogo/elettrodomestici/" class="category-card">
-                    <div class="category-icon">🏠</div>
-                    <h3>Elettrodomestici</h3>
-                    <p>Frullatori, macchine caffè, aspirapolvere</p>
-                </a>
-                <a href="/catalogo/gaming/" class="category-card">
-                    <div class="category-icon">🎮</div>
-                    <h3>Gaming</h3>
-                    <p>PlayStation, Xbox, Nintendo e accessori</p>
-                </a>
-                <a href="/catalogo/pc-laptop/" class="category-card">
-                    <div class="category-icon">💻</div>
-                    <h3>PC & Laptop</h3>
-                    <p>Computer e portatili ricondizionati</p>
-                </a>
-                <a href="/catalogo/tv-monitor/" class="category-card">
-                    <div class="category-icon">📺</div>
-                    <h3>TV & Monitor</h3>
-                    <p>Televisori e schermi verificati</p>
-                </a>
-                <a href="/catalogo/vintage/" class="category-card">
-                    <div class="category-icon">📻</div>
-                    <h3>Vintage</h3>
-                    <p>Stereo, hi-fi, radio d'epoca</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRODOTTI IN EVIDENZA -->
-    <section class="featured-products">
-        <div class="container">
-            <div class="section-header">
-                <h2>Prodotti in Evidenza</h2>
-                <p>Le migliori occasioni verificate dal nostro team</p>
-            </div>
-            <div class="products-grid">
-                <!-- Prodotto 1 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-badge grade-badge">GRADO B</span>
-                        <span style="font-size: 4rem;">🎮</span>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-category">Gaming</p>
-                        <h3 class="product-title">PlayStation 4 Pro 1TB</h3>
-                        <div class="product-price">
-                            <span class="price-current">€189</span>
-                            <span class="price-original">€399</span>
-                        </div>
-                        <div class="product-features">
-                            <span class="feature-tag">Testato</span>
-                            <span class="feature-tag">Garanzia 30gg</span>
-                        </div>
-                        <div class="product-cta">
-                            <button class="btn-add-cart">Aggiungi</button>
-                            <button class="btn-quick-view">👁️</button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Prodotto 2 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-badge">GRADO A</span>
-                        <span style="font-size: 4rem;">☕</span>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-category">Elettrodomestici</p>
-                        <h3 class="product-title">Macchina Caffè De'Longhi</h3>
-                        <div class="product-price">
-                            <span class="price-current">€79</span>
-                            <span class="price-original">€159</span>
-                        </div>
-                        <div class="product-features">
-                            <span class="feature-tag">Come nuovo</span>
-                            <span class="feature-tag">Garanzia 30gg</span>
-                        </div>
-                        <div class="product-cta">
-                            <button class="btn-add-cart">Aggiungi</button>
-                            <button class="btn-quick-view">👁️</button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Prodotto 3 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-badge grade-badge">GRADO B</span>
-                        <span style="font-size: 4rem;">💻</span>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-category">PC & Laptop</p>
-                        <h3 class="product-title">Lenovo ThinkPad T480</h3>
-                        <div class="product-price">
-                            <span class="price-current">€349</span>
-                            <span class="price-original">€699</span>
-                        </div>
-                        <div class="product-features">
-                            <span class="feature-tag">i5 8a gen</span>
-                            <span class="feature-tag">8GB RAM</span>
-                        </div>
-                        <div class="product-cta">
-                            <button class="btn-add-cart">Aggiungi</button>
-                            <button class="btn-quick-view">👁️</button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Prodotto 4 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-badge">GRADO A</span>
-                        <span style="font-size: 4rem;">📻</span>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-category">Vintage</p>
-                        <h3 class="product-title">Radio Vintage Anni '80</h3>
-                        <div class="product-price">
-                            <span class="price-current">€149</span>
-                            <span class="price-original">€299</span>
-                        </div>
-                        <div class="product-features">
-                            <span class="feature-tag">Revisionato</span>
-                            <span class="feature-tag">Pezzo unico</span>
-                        </div>
-                        <div class="product-cta">
-                            <button class="btn-add-cart">Aggiungi</button>
-                            <button class="btn-quick-view">👁️</button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Prodotto 5 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-badge grade-badge">GRADO B</span>
-                        <span style="font-size: 4rem;">📺</span>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-category">TV & Monitor</p>
-                        <h3 class="product-title">Samsung Smart TV 43"</h3>
-                        <div class="product-price">
-                            <span class="price-current">€229</span>
-                            <span class="price-original">€449</span>
-                        </div>
-                        <div class="product-features">
-                            <span class="feature-tag">Full HD</span>
-                            <span class="feature-tag">Smart TV</span>
-                        </div>
-                        <div class="product-cta">
-                            <button class="btn-add-cart">Aggiungi</button>
-                            <button class="btn-quick-view">👁️</button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Prodotto 6 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-badge">GRADO A</span>
-                        <span style="font-size: 4rem;">🔌</span>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-category">Elettrodomestici</p>
-                        <h3 class="product-title">Robot Aspirapolvere Xiaomi</h3>
-                        <div class="product-price">
-                            <span class="price-current">€159</span>
-                            <span class="price-original">€299</span>
-                        </div>
-                        <div class="product-features">
-                            <span class="feature-tag">Testato</span>
-                            <span class="feature-tag">Come nuovo</span>
-                        </div>
-                        <div class="product-cta">
-                            <button class="btn-add-cart">Aggiungi</button>
-                            <button class="btn-quick-view">👁️</button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Prodotto 7 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-badge grade-badge">GRADO B</span>
-                        <span style="font-size: 4rem;">🎮</span>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-category">Gaming</p>
-                        <h3 class="product-title">Nintendo Switch</h3>
-                        <div class="product-price">
-                            <span class="price-current">€199</span>
-                            <span class="price-original">€329</span>
-                        </div>
-                        <div class="product-features">
-                            <span class="feature-tag">Controller OK</span>
-                            <span class="feature-tag">Garanzia 30gg</span>
-                        </div>
-                        <div class="product-cta">
-                            <button class="btn-add-cart">Aggiungi</button>
-                            <button class="btn-quick-view">👁️</button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Prodotto 8 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-badge">GRADO A</span>
-                        <span style="font-size: 4rem;">💻</span>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-category">PC & Laptop</p>
-                        <h3 class="product-title">MacBook Air 2019</h3>
-                        <div class="product-price">
-                            <span class="price-current">€449</span>
-                            <span class="price-original">€899</span>
-                        </div>
-                        <div class="product-features">
-                            <span class="feature-tag">i5</span>
-                            <span class="feature-tag">8GB RAM</span>
-                        </div>
-                        <div class="product-cta">
-                            <button class="btn-add-cart">Aggiungi</button>
-                            <button class="btn-quick-view">👁️</button>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- TRUST BAR -->
-    <section class="trust-bar">
-        <div class="container">
-            <div class="trust-grid">
-                <div class="trust-item">
-                    <div class="trust-icon">✓</div>
-                    <h3>Testato dal Fondatore</h3>
-                    <p>Ogni prodotto verificato personalmente prima della spedizione</p>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-icon">🛡️</div>
-                    <h3>Garanzia 30 Giorni</h3>
-                    <p>Non funziona? Ti rimborsiamo senza domande</p>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-icon">🔄</div>
-                    <h3>Reso Gratuito</h3>
-                    <p>30 giorni per cambiare idea, spese di reso a nostro carico</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- RECENSIONI -->
-    <section class="reviews">
-        <div class="container">
-            <div class="section-header">
-                <h2>Cosa Dicono i Nostri Clienti</h2>
-                <p>Oltre 500 clienti soddisfatti in tutta Italia</p>
-            </div>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Ho comprato una PS4 Pro e sono rimasta stupita: come nuova, spedizione velocissima e imballaggio perfetto. Mai più dal nuovo!"</p>
-                    <div class="review-author">
-                        <div class="author-avatar">C</div>
-                        <div class="author-info">
-                            <h4>Carmela R.</h4>
-                            <p>Napoli • Gaming</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Finalmente un sito serio per l'usato. Descrizione dettagliata, foto reali, e la garanzia mi ha fatto sentire sicuro. Ottimo servizio."</p>
-                    <div class="review-author">
-                        <div class="author-avatar">L</div>
-                        <div class="author-info">
-                            <h4>Lorenzo M.</h4>
-                            <p>Milano • PC & Laptop</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Ho trovato uno stereo vintage che cercavo da anni, perfettamente revisionato. Il fondatore sa davvero di cosa parla. Consigliatissimo!"</p>
-                    <div class="review-author">
-                        <div class="author-avatar">M</div>
-                        <div class="author-info">
-                            <h4>Marco T.</h4>
-                            <p>Torino • Vintage</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA RIPARAZIONI -->
-    <section class="repair-cta">
-        <div class="container">
-            <div class="repair-content">
-                <div class="repair-text">
-                    <h2>Hai un Dispositivo Rotto?</h2>
-                    <p>Non buttarlo! Il nostro servizio di riparazione gli dà nuova vita.</p>
-                    <div class="repair-features">
-                        <div class="repair-feature">
-                            <div class="repair-feature-icon">✓</div>
-                            <span>Preventivo gratuito in 24h</span>
-                        </div>
-                        <div class="repair-feature">
-                            <div class="repair-feature-icon">✓</div>
-                            <span>Ritiro e consegna a domicilio</span>
-                        </div>
-                        <div class="repair-feature">
-                            <div class="repair-feature-icon">✓</div>
-                            <span>Compatibile con Diritto alla Riparazione UE</span>
-                        </div>
-                    </div>
-                    <a href="/riparazioni/" class="btn-primary" style="display: inline-block; margin-top: 1.5rem;">Scopri il Servizio Riparazione</a>
-                </div>
-                <div class="repair-image" style="text-align: center; font-size: 8rem;">🔧</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h4>Elettronica Consapevole</h4>
-                    <p style="color: var(--gray-light); margin-top: 1rem;">Elettronica usata testata e garantita. Risparmia mantenendo qualità e affidabilità.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Prodotti</h4>
-                    <div class="footer-links">
-                        <a href="/catalogo/elettrodomestici/">Elettrodomestici</a>
-                        <a href="/catalogo/gaming/">Gaming</a>
-                        <a href="/catalogo/pc-laptop/">PC & Laptop</a>
-                        <a href="/catalogo/tv-monitor/">TV & Monitor</a>
-                        <a href="/catalogo/vintage/">Vintage</a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Azienda</h4>
-                    <div class="footer-links">
-                        <a href="/chi-siamo/">Chi Siamo</a>
-                        <a href="/come-funziona/">Come Funziona</a>
-                        <a href="/come-funziona/grading/">Sistema Grading</a>
-                        <a href="/come-funziona/garanzia/">Garanzia</a>
-                        <a href="/riparazioni/">Riparazioni</a>
-                        <a href="/blog/">Blog</a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Newsletter</h4>
-                    <p style="color: var(--gray-light); margin-bottom: 1rem;">Ricevi offerte esclusive e novità</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="La tua email" class="newsletter-input" required>
-                        <button type="submit" class="newsletter-btn">Iscriviti</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Elettronica Consapevole. Tutti i diritti riservati. | P.IVA: DA DEFINIRE | <a href="/privacy/" style="text-decoration: underline;">Privacy</a> | <a href="/termini/" style="text-decoration: underline;">Termini</a></p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- POPUP NEWSLETTER -->
-    <div class="newsletter-popup" id="newsletterPopup">
-        <button class="popup-close" onclick="closeNewsletter()">×</button>
-        <h3>Sconto del 10%</h3>
-        <p>Iscriviti alla newsletter e ricevi uno sconto sul tuo primo ordine!</p>
-        <form class="newsletter-form">
-            <input type="email" placeholder="La tua email" class="newsletter-input" required>
-            <button type="submit" class="newsletter-btn">Ottieni lo Sconto</button>
-        </form>
+  <!-- ===== MOBILE NAV DRAWER ===== -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop" onclick="closeMobileMenu()"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="drawer-header">
+      <div class="logo">
+        <div class="logo-icon">EC</div>
+        <span>Elettronica<br>Consapevole</span>
+      </div>
+      <button class="drawer-close-btn" onclick="closeMobileMenu()" aria-label="Chiudi">&#x2715;</button>
     </div>
-
-    <!-- WHATSAPP BUTTON -->
-    <a href="https://wa.me/393XXXXXXXXX" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contattaci su WhatsApp">
-        <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-        </svg>
+    <nav class="drawer-nav">
+      <a href="catalogo.html" onclick="closeMobileMenu()">
+        <span class="drawer-nav-icon">🏷️</span> Catalogo
+      </a>
+      <a href="#riparazioni" onclick="closeMobileMenu()">
+        <span class="drawer-nav-icon">🔧</span> Riparazioni
+      </a>
+      <a href="#come-funziona" onclick="closeMobileMenu()">
+        <span class="drawer-nav-icon">💡</span> Come Funziona
+      </a>
+      <a href="#chi-siamo" onclick="closeMobileMenu()">
+        <span class="drawer-nav-icon">👤</span> Chi Siamo
+      </a>
+    </nav>
+    <a href="catalogo.html" class="drawer-cta-btn" onclick="closeMobileMenu()">
+      Scopri il Catalogo →
     </a>
+    <a href="https://wa.me/+39INSERISCINUMERO" class="drawer-whatsapp-link" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 32 32" fill="white"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.504 1.132 6.752 3.048 9.384L1.052 31.28l6.072-1.948A15.925 15.925 0 0 0 16.004 32C24.828 32 32 24.824 32 16S24.828 0 16.004 0z" fill="#25D366"/><path d="M25.316 22.612c-.388 1.092-1.928 1.996-3.156 2.26-.84.18-1.936.324-5.628-1.212-4.72-1.956-7.756-6.74-7.992-7.052-.228-.312-1.916-2.548-1.916-4.86 0-2.312 1.204-3.44 1.636-3.88.388-.396.832-.496 1.108-.496.272 0 .548.004.788.016.252.012.592-.096.924.704.344.824 1.168 2.848 1.272 3.056.104.204.172.444.032.716-.136.272-.204.444-.404.684-.204.24-.428.54-.612.724-.204.204-.416.42-.18.828.24.404 1.064 1.752 2.28 2.836 1.568 1.4 2.892 1.836 3.296 2.04.404.204.64.168.876-.104.24-.276 1.028-1.196 1.3-1.608.272-.408.548-.34.924-.204.38.136 2.388 1.128 2.796 1.332.408.208.68.308.78.48.096.172.096.996-.292 2.088z" fill="#fff"/></svg>
+      Scrivici su WhatsApp
+    </a>
+  </div>
 
-    <script src="script.js"></script>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="mainHeader">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">EC</div>
+        <span>Elettronica<br>Consapevole</span>
+      </a>
+      <nav class="nav">
+        <a href="catalogo.html">Catalogo</a>
+        <a href="#riparazioni">Riparazioni</a>
+        <a href="#come-funziona">Come Funziona</a>
+        <a href="#chi-siamo">Chi Siamo</a>
+      </nav>
+      <a href="catalogo.html" class="cta-btn">Scopri il Catalogo</a>
+      <button class="mobile-menu-btn" onclick="openMobileMenu()" aria-label="Apri menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-slide">
+      <div class="hero-content">
+        <span class="hero-badge">✦ FINO AL 60% DI RISPARMIO</span>
+        <h1>Risparmia Mantenendo<br>Qualità e Affidabilità</h1>
+        <p>Elettronica usata testata, descritta onestamente e garantita 30 giorni. Zero sorprese.</p>
+        <div class="hero-cta">
+          <a href="catalogo.html" class="btn-primary">Esplora il Catalogo</a>
+          <a href="#come-funziona" class="btn-secondary">Come Funziona</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2>Scopri le Nostre Categorie</h2>
+        <p>Cinque mondi di elettronica usata, testata e garantita</p>
+      </div>
+      <div class="categories-grid">
+        <a href="catalogo.html" class="category-card">
+          <div class="category-icon">🏠</div>
+          <h3>Elettrodomestici</h3>
+          <p>Casa smart al giusto prezzo</p>
+        </a>
+        <a href="catalogo.html" class="category-card">
+          <div class="category-icon">🎮</div>
+          <h3>Gaming</h3>
+          <p>Console e accessori testati</p>
+        </a>
+        <a href="catalogo.html" class="category-card">
+          <div class="category-icon">💻</div>
+          <h3>PC & Laptop</h3>
+          <p>Potenza senza spendere</p>
+        </a>
+        <a href="catalogo.html" class="category-card">
+          <div class="category-icon">📻</div>
+          <h3>Vintage</h3>
+          <p>Elettronica d'epoca rivistata</p>
+        </a>
+        <a href="catalogo.html" class="category-card">
+          <div class="category-icon">📺</div>
+          <h3>TV & Monitor</h3>
+          <p>Display di qualità garantiti</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOP 3 OFFERTE ===== -->
+  <section class="featured-products">
+    <div class="container">
+      <div class="section-header">
+        <h2>Le Migliori Offerte del Momento</h2>
+        <p>Selezionate e verificate dal nostro team</p>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="product-badge">-52%</span>
+            <span style="font-size:5rem">🎮</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Gaming</p>
+            <h3 class="product-title">PlayStation 4 Pro 1TB</h3>
+            <div class="product-price">
+              <span class="price-current">€149</span>
+              <span class="price-original">€309</span>
+            </div>
+            <div class="product-features">
+              <span class="feature-tag">✓ Testata</span>
+              <span class="feature-tag">✓ 30gg Garanzia</span>
+            </div>
+            <div class="product-cta">
+              <a href="https://wa.me/+39INSERISCINUMERO?text=Ciao!%20Sono%20interessato%20alla%20PS4%20Pro" class="btn-add-cart" target="_blank" rel="noopener">Contattaci</a>
+              <button class="btn-quick-view">👁</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="product-badge grade-badge">OTTIMO</span>
+            <span style="font-size:5rem">💻</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">PC & Laptop</p>
+            <h3 class="product-title">MacBook Air M1 8GB / 256GB</h3>
+            <div class="product-price">
+              <span class="price-current">€599</span>
+              <span class="price-original">€1.129</span>
+            </div>
+            <div class="product-features">
+              <span class="feature-tag">✓ Testato</span>
+              <span class="feature-tag">✓ 30gg Garanzia</span>
+            </div>
+            <div class="product-cta">
+              <a href="https://wa.me/+39INSERISCINUMERO?text=Ciao!%20Sono%20interessato%20al%20MacBook%20Air%20M1" class="btn-add-cart" target="_blank" rel="noopener">Contattaci</a>
+              <button class="btn-quick-view">👁</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="product-badge">-45%</span>
+            <span style="font-size:5rem">📺</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">TV & Monitor</p>
+            <h3 class="product-title">Samsung QLED 55" 4K UHD</h3>
+            <div class="product-price">
+              <span class="price-current">€329</span>
+              <span class="price-original">€599</span>
+            </div>
+            <div class="product-features">
+              <span class="feature-tag">✓ Testato</span>
+              <span class="feature-tag">✓ 30gg Garanzia</span>
+            </div>
+            <div class="product-cta">
+              <a href="https://wa.me/+39INSERISCINUMERO?text=Ciao!%20Sono%20interessato%20al%20Samsung%20QLED%2055" class="btn-add-cart" target="_blank" rel="noopener">Contattaci</a>
+              <button class="btn-quick-view">👁</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOTTONE CATALOGO COMPLETO -->
+      <div class="catalog-cta-wrapper">
+        <p class="catalog-cta-hint">Vuoi vedere tutti i prodotti disponibili?</p>
+        <a href="catalogo.html" class="catalog-full-btn">
+          Esplora tutto il Catalogo
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <section class="trust-bar" id="come-funziona">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">🔍</div>
+          <h3>Verificato Personalmente</h3>
+          <p>Ogni prodotto testato prima della spedizione</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🛡️</div>
+          <h3>Rimborso Garantito</h3>
+          <p>Non funziona? Ti rimborsiamo senza domande</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">📦</div>
+          <h3>Reso Gratuito 30 Giorni</h3>
+          <p>Spese di reso sempre a nostro carico</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews">
+    <div class="container">
+      <div class="section-header">
+        <h2>Cosa Dicono i Nostri Clienti</h2>
+        <p>Oltre 500 clienti soddisfatti in tutta Italia</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Ho comprato una PS4 Pro e sono rimasta stupita: come nuova, spedizione velocissima e imballaggio perfetto. Mai più dal nuovo!"</p>
+          <div class="review-author">
+            <div class="author-avatar">M</div>
+            <div class="author-info"><h4>Martina R.</h4><p>Cliente verificata</p></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Finalmente un sito serio per l'usato. Descrizione dettagliata, foto reali e la garanzia mi ha fatto sentire sicuro."</p>
+          <div class="review-author">
+            <div class="author-avatar">L</div>
+            <div class="author-info"><h4>Luca B.</h4><p>Cliente verificato</p></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Ho trovato uno stereo vintage che cercavo da anni, perfettamente revisionato. Il fondatore sa davvero di cosa parla!"</p>
+          <div class="review-author">
+            <div class="author-avatar">G</div>
+            <div class="author-info"><h4>Giuseppe T.</h4><p>Cliente verificato</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REPAIR CTA ===== -->
+  <section class="repair-cta" id="riparazioni">
+    <div class="container">
+      <div class="repair-content">
+        <div class="repair-text">
+          <h2>Hai un dispositivo rotto?</h2>
+          <p>Non buttarlo! Il nostro servizio di riparazione gli dà nuova vita.</p>
+          <div class="repair-features">
+            <div class="repair-feature"><div class="repair-feature-icon">✓</div><span>Diagnosi gratuita</span></div>
+            <div class="repair-feature"><div class="repair-feature-icon">✓</div><span>Preventivo trasparente</span></div>
+            <div class="repair-feature"><div class="repair-feature-icon">✓</div><span>Garanzia sulla riparazione</span></div>
+          </div>
+        </div>
+        <div class="repair-action">
+          <a href="https://wa.me/+39INSERISCINUMERO?text=Ciao!%20Vorrei%20un%20preventivo%20per%20una%20riparazione" class="btn-repair" target="_blank" rel="noopener">
+            Richiedi Preventivo →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="chi-siamo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <div class="logo footer-logo">
+            <div class="logo-icon">EC</div>
+            <span>Elettronica<br>Consapevole</span>
+          </div>
+          <p style="color:var(--gray-light);font-size:.88rem;line-height:1.6;margin-top:.75rem">Elettronica usata testata, descritta onestamente e garantita. Zero sorprese.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Navigazione</h4>
+          <div class="footer-links">
+            <a href="catalogo.html">Catalogo</a>
+            <a href="#riparazioni">Riparazioni</a>
+            <a href="#come-funziona">Come Funziona</a>
+            <a href="#chi-siamo">Chi Siamo</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Supporto</h4>
+          <div class="footer-links">
+            <a href="#">FAQ</a>
+            <a href="#">Spedizioni</a>
+            <a href="#">Resi e Garanzia</a>
+            <a href="https://wa.me/+39INSERISCINUMERO" target="_blank" rel="noopener">Contattaci</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Newsletter</h4>
+          <p style="color:var(--gray-light);font-size:.88rem;margin-bottom:1rem">Ricevi le migliori offerte prima di tutti.</p>
+          <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+            <input type="email" class="newsletter-input" placeholder="La tua email" required>
+            <button type="submit" class="newsletter-btn">Iscriviti</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Elettronica Consapevole — <a href="#" style="color:var(--gray-light)">Privacy Policy</a> · <a href="#" style="color:var(--gray-light)">Cookie Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== POPUP NEWSLETTER (IN ALTO A DESTRA) ===== -->
+  <div class="newsletter-popup" id="newsletterPopup">
+    <button class="popup-close" onclick="closeNewsletter()" aria-label="Chiudi">&#x2715;</button>
+    <div class="popup-emoji">🎁</div>
+    <h3>Sconto del 10%</h3>
+    <p>Iscriviti alla newsletter e ricevi uno sconto sul tuo primo ordine!</p>
+    <form onsubmit="handlePopupNewsletter(event)">
+      <input type="email" class="popup-input" placeholder="La tua email" required>
+      <button type="submit" class="popup-btn">Ottieni lo Sconto</button>
+    </form>
+  </div>
+
+  <!-- ===== WHATSAPP FLOAT (IN BASSO A DESTRA) ===== -->
+  <a href="https://wa.me/+39INSERISCINUMERO" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contattaci su WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.504 1.132 6.752 3.048 9.384L1.052 31.28l6.072-1.948A15.925 15.925 0 0 0 16.004 32C24.828 32 32 24.824 32 16S24.828 0 16.004 0z" fill="white"/>
+      <path d="M25.316 22.612c-.388 1.092-1.928 1.996-3.156 2.26-.84.18-1.936.324-5.628-1.212-4.72-1.956-7.756-6.74-7.992-7.052-.228-.312-1.916-2.548-1.916-4.86 0-2.312 1.204-3.44 1.636-3.88.388-.396.832-.496 1.108-.496.272 0 .548.004.788.016.252.012.592-.096.924.704.344.824 1.168 2.848 1.272 3.056.104.204.172.444.032.716-.136.272-.204.444-.404.684-.204.24-.428.54-.612.724-.204.204-.416.42-.18.828.24.404 1.064 1.752 2.28 2.836 1.568 1.4 2.892 1.836 3.296 2.04.404.204.64.168.876-.104.24-.276 1.028-1.196 1.3-1.608.272-.408.548-.34.924-.204.38.136 2.388 1.128 2.796 1.332.408.208.68.308.78.48.096.172.096.996-.292 2.088z" fill="#25D366"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
