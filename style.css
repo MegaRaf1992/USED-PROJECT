@@ -1,5 +1,5 @@
 /* ============================================================
-   ELETTRONICA CONSAPEVOLE — style.css
+   RIVIVI SHOP — style.css
    ============================================================ */
 
 /* ===== RESET & VARIABILI ===== */
@@ -71,33 +71,50 @@ body {
   gap: 1rem;
 }
 
-/* LOGO */
+/* LOGO CON IMMAGINE */
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.65rem;
   text-decoration: none;
   color: var(--dark);
   font-weight: 700;
-  font-size: 0.92rem;
-  line-height: 1.3;
+  font-size: 1.05rem;
+  line-height: 1.25;
   flex-shrink: 0;
 }
-.logo-icon {
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+
+.logo-img {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-img--footer {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+  padding: 3px;
+}
+
+.logo-text {
+  font-weight: 800;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.footer-logo { 
+  color: white; 
+}
+.footer-logo .logo-text {
   color: white;
-  width: 38px;
-  height: 38px;
-  border-radius: 9px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-family: var(--font-mono);
-  font-size: 0.88rem;
-  flex-shrink: 0;
 }
-.footer-logo { color: white; }
 
 /* NAV DESKTOP */
 .nav {
@@ -135,7 +152,7 @@ body {
 
 /* HAMBURGER BUTTON */
 .mobile-menu-btn {
-  display: none;   /* visibile solo su mobile via media query */
+  display: none;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
@@ -157,11 +174,10 @@ body {
 }
 
 /* ============================================================
-   MOBILE NAV DRAWER — nascosto di default su tutti i device,
-   aperto solo via JS (.open) — visibile solo su mobile
+   MOBILE NAV DRAWER
    ============================================================ */
 .mobile-nav-backdrop {
-  display: none;          /* JS: style.display='block' */
+  display: none;
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.45);
@@ -182,16 +198,15 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
-  transform: translateX(100%);    /* sempre fuori schermo */
+  transform: translateX(100%);
   transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
   box-shadow: -8px 0 32px rgba(0,0,0,0.14);
   overflow-y: auto;
 }
 .mobile-nav-drawer.open {
-  transform: translateX(0);       /* JS aggiunge .open */
+  transform: translateX(0);
 }
 
-/* su DESKTOP forza sempre nascosto anche se JS aggiunge .open per errore */
 @media (min-width: 769px) {
   .mobile-nav-drawer,
   .mobile-nav-backdrop {
@@ -598,11 +613,10 @@ body {
 .trust-item p  { color: var(--gray); font-size: 0.9rem; }
 
 /* ============================================================
-   RECENSIONI — scroll orizzontale su mobile, griglia su desktop
+   RECENSIONI
    ============================================================ */
 .reviews { padding: 5rem 0; }
 
-/* Desktop: griglia 3 colonne */
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -620,11 +634,10 @@ body {
 
 .review-author { display: flex; align-items: center; gap: 0.85rem; }
 
-/* Avatar: dimensione fissa uguale per tutti */
 .author-avatar {
   width: 46px;
   height: 46px;
-  min-width: 46px;   /* impedisce lo schiacciamento */
+  min-width: 46px;
   flex-shrink: 0;
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   color: white;
@@ -736,11 +749,11 @@ body {
 }
 
 /* ============================================================
-   POPUP NEWSLETTER — IN ALTO A DESTRA (desktop) / basso (mobile)
+   POPUP NEWSLETTER
    ============================================================ */
 .newsletter-popup {
   position: fixed;
-  top: 5.5rem;       /* sotto l'header sticky */
+  top: 5.5rem;
   right: 1.5rem;
   background: white;
   padding: 1.75rem 1.75rem 1.5rem;
@@ -811,7 +824,7 @@ body {
 .popup-btn:hover { background: var(--primary-dark); }
 
 /* ============================================================
-   WHATSAPP FLOAT — fisso in basso a destra, 56px, scorre con pagina
+   WHATSAPP FLOAT
    ============================================================ */
 .whatsapp-float {
   position: fixed;
@@ -833,7 +846,6 @@ body {
   transform: scale(1.1);
   box-shadow: 0 8px 28px rgba(37,211,102,0.6);
 }
-/* forza dimensione SVG interno — evita espansione a 100% */
 .whatsapp-float svg {
   width: 32px;
   height: 32px;
@@ -907,6 +919,16 @@ body {
   .nav, .cta-btn   { display: none; }
   .mobile-menu-btn { display: flex; }
 
+  /* Logo mobile più compatto */
+  .logo-img {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+  }
+  .logo-text {
+    font-size: 0.95rem;
+  }
+
   /* Hero */
   .hero       { padding: 3.5rem 1.25rem; }
   .hero h1    { font-size: 1.9rem; }
@@ -945,7 +967,6 @@ body {
     -webkit-overflow-scrolling: touch;
     gap: 1rem;
     padding-bottom: 1.25rem;
-    /* nasconde la scrollbar visivamente ma mantiene la funzionalità */
     scrollbar-width: none;
   }
   .reviews-grid::-webkit-scrollbar { display: none; }
@@ -966,17 +987,21 @@ body {
   /* Popup: in basso su mobile */
   .newsletter-popup {
     top: auto;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 1.5rem;
     left: 1rem;
+    right: 1rem;
     width: auto;
   }
 
-  /* WhatsApp */
-  .whatsapp-float      { bottom: 1.25rem; right: 1.25rem; width: 50px; height: 50px; }
-  .whatsapp-float svg  { width: 28px; height: 28px; }
-}
-
-@media (max-width: 400px) {
-  .hero h1 { font-size: 1.65rem; }
+  /* WhatsApp float: più piccolo su mobile */
+  .whatsapp-float {
+    width: 52px;
+    height: 52px;
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+  .whatsapp-float svg {
+    width: 28px;
+    height: 28px;
+  }
 }
