@@ -1,5 +1,5 @@
 /* ============================================================
-   ELETTRONICA CONSAPEVOLE — script.js
+   RIVIVI SHOP — script.js
    Funziona sia su index.html che su catalogo.html
    ============================================================ */
 
@@ -16,12 +16,11 @@ function openMobileMenu() {
   if (!drawer || !backdrop) return;
 
   backdrop.style.display = 'block';
-  // piccolo delay per permettere al browser di applicare display:block prima della transizione
   requestAnimationFrame(() => {
     backdrop.classList.add('visible');
     drawer.classList.add('open');
   });
-  document.body.style.overflow = 'hidden'; // blocca scroll sfondo
+  document.body.style.overflow = 'hidden';
 }
 
 function closeMobileMenu() {
@@ -33,13 +32,11 @@ function closeMobileMenu() {
   backdrop.classList.remove('visible');
   document.body.style.overflow = '';
 
-  // nasconde il backdrop dopo la transizione CSS (350ms)
   setTimeout(() => {
     backdrop.style.display = 'none';
   }, 360);
 }
 
-// Chiudi con tasto ESC
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeMobileMenu();
 });
@@ -72,12 +69,10 @@ $$('a[href^="#"]').forEach(anchor => {
 
 /* ============================================================
    POPUP NEWSLETTER
-   - compare dopo 5 secondi
-   - non ricompare nella stessa sessione se chiuso
    ============================================================ */
 (function initPopup() {
   const popup = $('#newsletterPopup');
-  if (!popup) return; // non presente su catalogo.html → skip
+  if (!popup) return;
 
   if (sessionStorage.getItem('popupClosed')) return;
 
@@ -117,7 +112,6 @@ function handleNewsletter(e) {
    TOAST NOTIFICATION
    ============================================================ */
 function showToast(msg) {
-  // rimuovi eventuale toast già presente
   const existing = $('.toast-notification');
   if (existing) existing.remove();
 
@@ -145,7 +139,6 @@ function showToast(msg) {
 
   document.body.appendChild(toast);
 
-  // anima entrata
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
       toast.style.opacity = '1';
@@ -153,7 +146,6 @@ function showToast(msg) {
     });
   });
 
-  // rimuovi dopo 3.5s
   setTimeout(() => {
     toast.style.opacity = '0';
     toast.style.transform = 'translateX(-50%) translateY(0)';
@@ -166,11 +158,10 @@ function showToast(msg) {
    ============================================================ */
 (function initFilters() {
   const filterBtns = $$('.filter-btn');
-  if (!filterBtns.length) return; // non presente → skip
+  if (!filterBtns.length) return;
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // aggiorna active
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
@@ -180,7 +171,6 @@ function showToast(msg) {
       cards.forEach(card => {
         const cat = card.dataset.category || '';
         const show = filter === 'all' || cat === filter;
-        // usa visibility per mantenere il layout griglia
         card.style.display = show ? '' : 'none';
       });
     });
@@ -188,10 +178,9 @@ function showToast(msg) {
 })();
 
 /* ============================================================
-   PRODOTTI: bottone "Contattaci" (feedback visivo opzionale)
+   PRODOTTI: bottone "Contattaci"
    ============================================================ */
 $$('.btn-add-cart').forEach(btn => {
-  // solo pulsanti veri <button>, non <a>
   if (btn.tagName !== 'BUTTON') return;
   btn.addEventListener('click', () => {
     const title = btn.closest('.product-card')
@@ -202,7 +191,7 @@ $$('.btn-add-cart').forEach(btn => {
 });
 
 /* ============================================================
-   QUICK VIEW (placeholder)
+   QUICK VIEW
    ============================================================ */
 $$('.btn-quick-view').forEach(btn => {
   btn.addEventListener('click', () => {
@@ -213,4 +202,4 @@ $$('.btn-quick-view').forEach(btn => {
   });
 });
 
-console.log('✅ Elettronica Consapevole — script caricato');
+console.log('✅ RiVivi Shop — script caricato');
